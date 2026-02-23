@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f8f9fa] text-gray-800 font-sans min-h-screen pb-10">
+    <div class="max-w-4xl mx-auto p-4 md:p-8">
+        
+        <h1 class="text-3xl font-bold text-slate-800 mb-6">Job Application Tracker</h1>
+        
+        <div class="grid grid-cols-3 gap-4 md:gap-8 mb-12">
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex flex-col justify-between">
+                <h2 class="text-sm text-gray-600 font-semibold mb-2">Total</h2>
+                <p class="text-4xl font-bold text-slate-800" id="total-count">0</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex flex-col justify-between">
+                <h2 class="text-sm text-gray-600 font-semibold mb-2">Interview</h2>
+                <p class="text-4xl font-bold text-emerald-600" id="interview-count">0</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex flex-col justify-between">
+                <h2 class="text-sm text-gray-600 font-semibold mb-2">Rejected</h2>
+                <p class="text-4xl font-bold text-red-500" id="rejected-count">0</p>
+            </div>
+        </div>
+    </body>
+    </html>
