@@ -25,5 +25,32 @@
                 <p class="text-4xl font-bold text-red-500" id="rejected-count">0</p>
             </div>
         </div>
+           <div class="flex justify-between items-end mb-4">
+            <h2 class="text-xl font-bold text-slate-800">Available Jobs</h2>
+            <p class="text-gray-500 text-sm font-medium">Showing: <span id="tab-count" class="font-bold text-slate-800">0</span></p>
+        </div>
+
+        <div class="flex gap-2 mb-6 border-b border-gray-200 pb-2" id="tabs-container">
+            <button class="tab-btn px-4 py-2 bg-blue-500 text-white rounded text-sm font-medium transition-colors" data-tab="all">All</button>
+            <button class="tab-btn px-4 py-2 text-gray-500 hover:bg-gray-200 rounded text-sm font-medium transition-colors" data-tab="interview">Interview</button>
+            <button class="tab-btn px-4 py-2 text-gray-500 hover:bg-gray-200 rounded text-sm font-medium transition-colors" data-tab="rejected">Rejected</button>
+        </div>
+
+        <div id="job-list" class="space-y-4">
+            </div>
+
+    </div>
+
+    <template id="empty-state-template">
+        <div class="bg-white p-12 rounded-lg shadow-sm border border-gray-100 flex flex-col items-center justify-center text-center">
+            <svg class="w-16 h-16 text-blue-400 mb-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path>
+            </svg>
+            <h3 class="text-lg font-bold text-slate-800 mb-1">No jobs available</h3>
+            <p class="text-sm text-gray-500">Check back soon for new job opportunities</p>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
     </body>
     </html>
